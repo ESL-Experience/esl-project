@@ -1,0 +1,24 @@
+button {
+    color: white;
+}
+
+#navbarNavAltMarkup {
+    margin-top: -25px;
+    float: right !important;
+}
+
+.title {
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+nav {
+    border-bottom: 2px solid #E8E887;
+    height: 150px;
+    padding: 50px;
+    margin: 50px
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
