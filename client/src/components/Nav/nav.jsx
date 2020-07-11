@@ -9,7 +9,7 @@ export default class nav extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-none">
           <a className="navbar-brand text-white" href="#">
-            <img src= { logo } height="200" width="200"/>
+            <img src= { logo } height="250" width="250"/>
           </a> <span className="title text-white">English Experience </span>
           <button
             className="navbar-toggler text-white"
@@ -31,14 +31,14 @@ export default class nav extends Component {
                 Levels
               </Link>
               <a className="nav-item nav-link text-white" href="#">
-                Pricing
+                Activities
               </a>
-              <a
+              {/* <a
                 className="nav-item nav-link text-white"
                 href="#"
               >
                 Disabled
-              </a>
+              </a> */}
             </div>
           </div>
         </nav>

@@ -3,13 +3,20 @@ button {
 }
 
 #navbarNavAltMarkup {
-    margin-top: -25px;
+    margin-top: -20
+    px;
     float: right !important;
+    font-family: "Avenir", sans-serif;
+    font-weight: lighter;
 }
 
 .title {
     margin-top: -25px;
     margin-left: -25px;
+    font-family: "Avenir", sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+
 }
 
 nav {
