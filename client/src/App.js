@@ -6,6 +6,7 @@ import levels from "./components/Levels/levels";
 import Nav from "./components/Nav/nav";
 import "./App.css"
 import home from "./components/Home/home";
+import login from "./components/Login/login"
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          <Route exact path="/" component={home} />
+          <Route exact path="/" component={login} />
+          <Route exact path="/home" component={home} />
           <Route exact path="/levels" component={levels} />
           {/* <Route exact path="/books" component={Books} />
           <Route exact path="/books/:id" component={Detail} />

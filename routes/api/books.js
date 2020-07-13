@@ -1,16 +1,12 @@
-const router = require("express").Router();
-const booksController = require("../../controllers/booksController");
+const router = require("express");
+const authRoutes = require("../auth-routes");
+const app = express();
 
-// Matches with "/api/books"
-router.route("/")
-  .get(booksController.findAll)
-  .post(booksController.create);
+//set up routes
+app.use("/auth", authRoutes);
 
-// Matches with "/api/books/:id"
-router
-  .route("/:id")
-  .get(booksController.findById)
-  .put(booksController.update)
-  .delete(booksController.remove);
+app.get("/", (req, res) => {
+  res.render("home");
+});
 
 module.exports = router;

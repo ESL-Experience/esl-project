@@ -1,3 +1,7 @@
+// require models
+const User = require('./user');
+
+// export models
 module.exports = {
-  Book: require("./book")
-};
+  User
+}
