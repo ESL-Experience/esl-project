@@ -34,7 +34,7 @@ router
       process.env.NODE_ENV === "production"
         ? "https://esl-final-project.herokuapp.com/home"
         : "http://localhost:3000/home";
-    redirectPath = `${redirectPath}/search?userId=${req.user._id}`;
+    redirectPath = `${redirectPath}/${req.user._id}`;
     res.redirect(redirectPath);
   });
 
@@ -46,7 +46,7 @@ router
       process.env.NODE_ENV === "production"
         ? "https://esl-final-project.herokuapp.com/home"
         : "http://localhost:3000/home";
-    redirectPath = `${redirectPath}/search?userId=${req.user._id}`;
+    redirectPath = `${redirectPath}/${req.user._id}`;
     res.redirect(redirectPath);
   });
 
