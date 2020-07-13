@@ -33,6 +33,9 @@ export default class nav extends Component {
               <a className="nav-item nav-link text-white" href="#">
                 Activities
               </a>
+              <Link to="/auth/logout"className="nav-item nav-link text-white" >
+                Log Out
+              </Link>
               {/* <a
                 className="nav-item nav-link text-white"
                 href="#"
