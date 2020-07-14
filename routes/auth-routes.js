@@ -34,8 +34,7 @@ router
       process.env.NODE_ENV === "production"
         ? "https://esl-final-project.herokuapp.com/home"
         : "http://localhost:3000/home";
-    redirectPath = `${redirectPath}/${req.user._id}`;
-    res.redirect(redirectPath);
+    res.redirect(`${redirectPath}/${req.user._id}`);
   });
 
 // callback route for facebook to redirect to
@@ -44,10 +43,9 @@ router
   .get(passport.authenticate("facebook"), (req, res) => {
     let redirectPath =
       process.env.NODE_ENV === "production"
-        ? "https://esl-final-project.herokuapp.com/home"
+        ? "https://esl-final-project.herokuapp.com/"
         : "http://localhost:3000/home";
-    redirectPath = `${redirectPath}/${req.user._id}`;
-    res.redirect(redirectPath);
+    res.redirect(`${redirectPath}/${req.user._id}`);
   });
 
 module.exports = router;
