@@ -30,13 +30,11 @@ router.route("/facebook").get(
 router
   .route("/google/redirect")
   .get(passport.authenticate("google"), (req, res) => {
-    console.log("google:")
     let redirectPath =
       process.env.NODE_ENV === "production"
-        ? "https://esl-final-project.herokuapp.com/"
+        ? "https://esl-final-project.herokuapp.com/dashboard"
         : "http://localhost:3000/dashboard";
-    // res.json({userId:req.user._id});
-    res.redirect(redirectPath);
+    res.redirect(`${redirectPath}/${req.user._id}`);
   });
 
 // callback route for facebook to redirect to
@@ -47,8 +45,7 @@ router
       process.env.NODE_ENV === "production"
         ? "https://esl-final-project.herokuapp.com/"
         : "http://localhost:3000/dashboard";
-    // res.json({userId:req.user._id});
-    res.redirect(redirectPath);
+    res.redirect(`${redirectPath}/${req.user._id}`);
   });
 
 module.exports = router;
