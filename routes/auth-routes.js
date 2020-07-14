@@ -32,8 +32,8 @@ router
   .get(passport.authenticate("google"), (req, res) => {
     let redirectPath =
       process.env.NODE_ENV === "production"
-        ? "https://esl-final-project.herokuapp.com/dashboard"
-        : "http://localhost:3000/dashboard";
+        ? "https://esl-final-project.herokuapp.com/home"
+        : "http://localhost:3000/home";
     res.redirect(`${redirectPath}/${req.user._id}`);
   });
 
@@ -44,7 +44,7 @@ router
     let redirectPath =
       process.env.NODE_ENV === "production"
         ? "https://esl-final-project.herokuapp.com/"
-        : "http://localhost:3000/dashboard";
+        : "http://localhost:3000/home";
     res.redirect(`${redirectPath}/${req.user._id}`);
   });
 
