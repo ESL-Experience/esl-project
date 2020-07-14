@@ -30,11 +30,12 @@ router.route("/facebook").get(
 router
   .route("/google/redirect")
   .get(passport.authenticate("google"), (req, res) => {
+    console.log("google:")
     let redirectPath =
       process.env.NODE_ENV === "production"
-        ? "https://esl-final-project.herokuapp.com/home"
-        : "http://localhost:3000/home";
-    redirectPath = `${redirectPath}/${req.user._id}`;
+        ? "https://esl-final-project.herokuapp.com/"
+        : "http://localhost:3000/dashboard";
+    // res.json({userId:req.user._id});
     res.redirect(redirectPath);
   });
 
@@ -44,9 +45,9 @@ router
   .get(passport.authenticate("facebook"), (req, res) => {
     let redirectPath =
       process.env.NODE_ENV === "production"
-        ? "https://esl-final-project.herokuapp.com/home"
-        : "http://localhost:3000/home";
-    redirectPath = `${redirectPath}/${req.user._id}`;
+        ? "https://esl-final-project.herokuapp.com/"
+        : "http://localhost:3000/dashboard";
+    // res.json({userId:req.user._id});
     res.redirect(redirectPath);
   });
 
