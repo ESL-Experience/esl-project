@@ -1,0 +1,78 @@
+:root {
+    --orange: #f86d20;
+    --yellow: #eded73;
+    --white: #ffffff;
+    --blue: #051f45;
+    --dkBlue: #041633;
+  }
+  
+  .btn {
+    font-family: "Century Gothic Regular", sans-serif;
+    border-radius: 42px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* button colors and styles */
+  
+  .btn--yellow--solid {
+    background-color: var(--yellow);
+    color: var(--blue);
+    border: var(--dkBlue) solid 1px;
+    margin: 5px;
+  }
+  
+  .btn--yellowBlue--solid {
+    background-color: var(--yellow);
+    color: var(--blue);
+    border: var(--orange) solid 1px;
+    margin: 5px;
+  }
+  
+  
+  .btn--orange--outline {
+    background-color: var(--white);
+    color: var(--blue);
+    border: var(--orange) solid 1px;
+    margin: 5px;
+  }
+  
+  .btn--yellow--outline {
+    background-color: var(--white);
+    color: var(--blue);
+    border: var(--yellow) solid 3px;
+    margin: 5px;
+  }
+  
+  /* button size */
+  .btn--medium {
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: lighter;
+  }
+  
+  .btn--small {
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  .intro {
+    font-family: "Avenir Regular", sans-serif;
+    font-weight: lighter;
+    color: #e8e887;
+    font-size: 80px;
+    margin-bottom: 25px;
+  }
+  
+  .subtitle {
+    font-family: "Avenir Regular", sans-serif;
+    font-weight: lighter;
+    color: #e8e887;
+    font-size: 30px;
+  }
+  
