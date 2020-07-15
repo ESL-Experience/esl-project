@@ -8,7 +8,7 @@ import "./App.css"
 import home from "./components/Home/home";
 import login from "./components/Login/login";
 import NoMatch from "../src/pages/NoMatch"
-import Dash from "../src/pages/Dash"
+import Levels from "../src/pages/Levels"
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/login" component={login} />
-          <Route exact path="/dashboard/:id" component={Dash} />
-          <Route exact path="/dashboard" component={levels} />
+          <Route exact path="/home/:id" component={home} />
+          <Route exact path="/dashboard" component={Levels} />
           {/* <Route exact path="/books" component={Books} /> */}
           {/* <Route exact path="/books/:id" component={Detail} /> */}
           <Route component={NoMatch} />

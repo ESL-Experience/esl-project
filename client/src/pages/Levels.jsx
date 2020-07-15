@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Button from "../components/Button/Button";
 
-class Dash extends Component {
+class Levels extends Component {
   render() {
     return (
       <div className="container-fluid">
@@ -47,4 +47,4 @@ class Dash extends Component {
     );
   }
 }
-export default Dash;
+export default Levels;
