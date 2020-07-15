@@ -29,19 +29,19 @@
             {
                 "id": 3,
                 "question": {
-                    "caption": "The teddy bear is _________ the cupboard.",
+                    "caption": "Bye! I'll see you _________ Friday.",
                     "options":[
                         "at",
                         "in",
                         "on"
                     ]
                 },
-                "answer": "in"
+                "answer": "on"
             },
             {
                 "id": 4,
                 "question": {
-                    "caption": "The books are _________ the shelf.",
+                    "caption": "What do you usually do _________ Sundays.",
                     "options":[
                         "at",
                         "in",
@@ -53,19 +53,19 @@
             {
                 "id": 5,
                 "question": {
-                    "caption": "I love to go swimming _________ the pool.",
+                    "caption": "I'm going to a concert _________ July 25th.",
                     "options":[
                         "at",
                         "in",
                         "on"
                     ]
                 },
-                "answer": "in"
+                "answer": "on"
             },
             {
                 "id": 6,
                 "question": {
-                    "caption": "My daughter's birthday is next week. She was born _________ July21st.",
+                    "caption": "My daughter's birthday is next week. She was born _________ July 21st.",
                     "options":[
                         "at",
                         "in",
