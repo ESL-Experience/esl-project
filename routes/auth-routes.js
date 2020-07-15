@@ -43,7 +43,7 @@ router
   .get(passport.authenticate("facebook"), (req, res) => {
     let redirectPath =
       process.env.NODE_ENV === "production"
-        ? "https://esl-final-project.herokuapp.com/"
+        ? "https://esl-final-project.herokuapp.com/dashboard"
         : "http://localhost:3000/dashboard";
     res.redirect(`${redirectPath}/${req.user._id}`);
   });
