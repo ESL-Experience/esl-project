@@ -24,10 +24,10 @@ export default class nav extends Component {
           </button>
           <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div className="navbar-nav ml-auto">
-              <Link to="/home/:id" className="nav-item nav-link active text-white align-right">
+              <Link to="/home" className="nav-item nav-link active text-white align-right">
                 Home <span className="sr-only">(current)</span>
               </Link>
-              <Link to="/dashboard"className="nav-item nav-link text-white" >
+              <Link to="/dashboard/:id"className="nav-item nav-link text-white" >
                 Levels
               </Link>
               <a className="nav-item nav-link text-white" href="#">

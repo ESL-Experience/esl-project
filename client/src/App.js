@@ -17,8 +17,8 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/login" component={login} />
-          <Route exact path="/home/:id" component={home} />
-          <Route exact path="/dashboard" component={Levels} />
+          <Route exact path="/home" component={home} />
+          <Route exact path="/dashboard/:id" component={Levels} />
           {/* <Route exact path="/books" component={Books} /> */}
           {/* <Route exact path="/books/:id" component={Detail} /> */}
           <Route component={NoMatch} />
