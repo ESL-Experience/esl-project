@@ -2,15 +2,15 @@ const router = require("express").Router();
 const passport = require("passport");
 
 // // auth logout
-// router.route("/logout").get((req, res) => {
-//   // handle with passport
-//   let redirectPath =
-//     process.env.NODE_ENV === "production"
-//       ? "https://esl-final-project.herokuapp.com/"
-//       : "http://localhost:3000/";
-//   req.logout();
-//   res.redirect(redirectPath);
-// });
+router.route("/logout").get((req, res) => {
+  // handle with passport
+  let redirectPath =
+    process.env.NODE_ENV === "production"
+      ? "https://esl-final-project.herokuapp.com/"
+      : "http://localhost:3000/";
+  req.logout();
+  res.redirect(redirectPath);
+});
 
 // auth with google
 router.route("/google").get(
@@ -34,7 +34,7 @@ router
       process.env.NODE_ENV === "production"
         ? "https://esl-final-project.herokuapp.com/dashboard"
         : "http://localhost:3000/dashboard";
-    res.redirect(`${redirectPath}/${req.user._id}`);
+    res.redirect(redirectPath);
   });
 
 // callback route for facebook to redirect to
@@ -43,9 +43,13 @@ router
   .get(passport.authenticate("facebook"), (req, res) => {
     let redirectPath =
       process.env.NODE_ENV === "production"
-        ? "https://esl-final-project.herokuapp.com/dashboard"
+        ? "https://esl-final-project.herokuapp.com/"
         : "http://localhost:3000/dashboard";
-    res.redirect(`${redirectPath}/${req.user._id}`);
+    res.redirect(redirectPath);
+  });
+
+  router.get("/current_user", (req, res) => {
+    res.json(req.user);
   });
 
 module.exports = router;
