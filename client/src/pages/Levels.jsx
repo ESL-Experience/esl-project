@@ -12,12 +12,14 @@ class Levels extends Component {
     await this.props.setCurrentUser();
   }
   render() {
+    console.log(this.props);
+    const { user } = this.props.auth;
     if (this.props.auth.isAuthenticated) {
       return (
         <div className="container-fluid">
           <div className="row intro">
             <div className="col-12 text-center">
-              <p>Hello John!</p>
+              <p>Hello {user.displayName}!</p>
             </div>
           </div>
           <div className="row subtitle">
@@ -33,8 +35,7 @@ class Levels extends Component {
                 }}
                 type="button"
                 buttonStyle="btn--yellow--outline"
-                buttonSize="btn--medium"
-              >
+                buttonSize="btn--medium">
                 Elementary
               </Button>
             </div>
@@ -47,8 +48,7 @@ class Levels extends Component {
                 }}
                 type="button"
                 buttonStyle="btn--orange--outline"
-                buttonSize="btn--medium"
-              >
+                buttonSize="btn--medium">
                 Intermediate
               </Button>
             </div>
