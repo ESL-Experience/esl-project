@@ -22,7 +22,7 @@ const facebookRedirect = process.env.NODE_ENV === "production" ? ('https://esl-f
 passport.use(
    new GoogleStrategy({
     // options for the google stratagy
-    callbackURL:"auth/google/redirect",
+    callbackURL:googleRedirect,
     clientID:keys.google.clientID,
     clientSecret:keys.google.clientSecret
  }, (accessToken, refreshToken, profile, done) => {
