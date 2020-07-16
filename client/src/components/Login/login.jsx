@@ -12,12 +12,12 @@ const Jumbotron = () => {
       className="jumbotron text-center">
       <a  
         className="nav-link"
-      as='a' href="/auth/google">
+      as='a' href={googlePath}>
         <button type="button" className="btn btn-gplus btn-danger"><i className="fab fa-google-plus-g pr-1">Google</i></button>
       </a>
       <a  
         className="nav-link"
-      as='a' href="/auth/facebook">
+      as='a' href={facebookPath}>
         <button type="button" className="btn btn-facebook btn-danger"><i className="fab fa-facebook pr-1">Facebook</i></button>
       </a>
     </div>
