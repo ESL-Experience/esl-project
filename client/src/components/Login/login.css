@@ -1,0 +1,48 @@
+#container {
+    background-color: white;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 450px; /* Adjust this value to move the positioned div up and down */
+    padding: 2px;
+}
+
+.logo {
+    width: 550px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    /* overflow: hidden; */
+    display: block;
+    /* margin: 0px; */
+    /* width: 40%; */
+    /* object-fit: cover; */
+}
+
+.logo img {
+    object-fit: cover;
+}
+
+h1 {
+    color: #E8E887;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 390px; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+    font-family: "Century Gothic Regular", sans-serif;
+}
+
+.nav-link {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 2px;
+}
