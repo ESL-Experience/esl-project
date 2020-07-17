@@ -27,12 +27,12 @@ export default class nav extends Component {
               <Link to="/home" className="nav-item nav-link active text-white align-right">
                 Home <span className="sr-only">(current)</span>
               </Link>
-              <Link to="/dashboard/:id"className="nav-item nav-link text-white" >
+              <Link to="/dashboard/:id" className="nav-item nav-link text-white" >
                 Levels
               </Link>
-              <a className="nav-item nav-link text-white" href="#">
+              <Link to="/elmactivity" className="nav-item nav-link text-white">
                 Activities
-              </a>
+              </Link>
               <Link to="/auth/logout"className="nav-item nav-link text-white" >
                 Log Out
               </Link>
