@@ -10,25 +10,26 @@ import NoMatch from "../src/pages/NoMatch";
 import Levels from "../src/pages/Levels";
 import store from "./store";
 import { Provider } from "react-redux";
-import Activity from "../src/pages/Activity"
+import Activity from "../src/pages/Activity";
+import ElmLanding from "../src/pages/ElmLanding"
 
 const Main = withRouter(({ location }) => {
   return (
-    <Provider store={store}>
-      <Router>
-        <div>
-          <Nav />
-          <Switch>
-            <Route exact path="/login" component={login} />
-            <Route exact path="/home" component={home} />
-            <Route exact path="/dashboard/:id" component={Levels} />
-            <Route exact path="/elmactivity" component={Activity} />
-            {/* <Route exact path="/books/:id" component={Detail} /> */}
-            <Route component={NoMatch} />
-          </Switch>
-        </div>
-      </Router>
-    </Provider>
+    // <Router>
+      <div>
+        {
+          location.pathname != '/login' && <Nav />
+        }
+        <Switch>
+          <Route exact path="/home" component={home} />
+          <Route exact path="/login" component={login} />
+          <Route exact path="/dashboard" component={Levels} />
+          <Route exact path="/ElmLanding" component={ElmLanding} />
+          <Route exact path="/Activity" component={Activity} />
+          <Route component={NoMatch} />
+        </Switch>
+      </div>
+    // </Router>
   );
 })
 
