@@ -1,7 +1,4 @@
-{
-    "elm-prep-time":
-    {
-        "elm-prep-time1":[
+[
             {
                 "id": 1,
                 "question": {
@@ -123,7 +120,3 @@
                 "answer": "at"
             }
         ]
-        
-    }
-
-}

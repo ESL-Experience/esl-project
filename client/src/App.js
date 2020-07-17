@@ -10,6 +10,7 @@ import NoMatch from "../src/pages/NoMatch";
 import Levels from "../src/pages/Levels";
 import store from "./store";
 import { Provider } from "react-redux";
+import Activity from "../src/pages/Activity"
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
           <Switch>
             <Route exact path="/login" component={login} />
             <Route exact path="/home" component={home} />
-            <Route exact path="/dashboard" component={Levels} />
-            {/* <Route exact path="/books" component={Books} /> */}
+            <Route exact path="/dashboard/:id" component={Levels} />
+            <Route exact path="/elmactivity" component={Activity} />
             {/* <Route exact path="/books/:id" component={Detail} /> */}
             <Route component={NoMatch} />
           </Switch>
