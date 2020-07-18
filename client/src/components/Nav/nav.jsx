@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import logo from "./eng-exp-logo-wht-bg-no-txt.png";
 import "./nav.css";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-export default class nav extends Component {
+class nav extends Component {
   render() {
+    console.log(this.props.auth.user);
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-none">
@@ -49,3 +51,8 @@ export default class nav extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+});
+export default connect(mapStateToProps)(nav);

@@ -1,4 +1,4 @@
-[{
+export const intPrepTime = [{
         "id": 1,
         "question": "The train left _________ time, right at 6pm.",
         "options": [

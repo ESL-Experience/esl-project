@@ -1,4 +1,4 @@
- [{
+export const intPast =[{
          "id": 1,
          "question": "Mozart _________ more than 600 pieces of music.",
          "options": [

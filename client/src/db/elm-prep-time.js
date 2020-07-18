@@ -1,4 +1,4 @@
-[{
+export const elmPrepTime =[{
         "id": 1,
         "question": "Tom said he would see us _________ Saturday.",
         "options": [

@@ -1,4 +1,4 @@
-[
+export const intFutr =[
     {
         "id": 1,
         "question": "'What you turning on the TV?''I _________ the news.'",
