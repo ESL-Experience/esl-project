@@ -30,7 +30,7 @@ export default class nav extends Component {
               <Link to="/dashboard/:id" className="nav-item nav-link text-white" >
                 Levels
               </Link>
-              <Link to="/elmactivity" className="nav-item nav-link text-white">
+              <Link to="/Activity" className="nav-item nav-link text-white">
                 Activities
               </Link>
               <Link to="/auth/logout"className="nav-item nav-link text-white" >
