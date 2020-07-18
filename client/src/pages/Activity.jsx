@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Button from "../components/Button/Button";
 import { intPres } from "../db/int-present";
+import Radio  from "../components/Radio/radio";
 
 class Exercises extends Component {
   state = {
@@ -24,6 +25,14 @@ class Exercises extends Component {
   componentDidMount() {
     this.loadExercise();
   }
+
+  onChange = (e) => {
+    console.log(e.target.value);
+    this.setState({
+      answer: e.target.value,
+      checked: !this.state.checked,
+    });
+  };
 
   render() {
     return (
@@ -52,30 +61,15 @@ class Exercises extends Component {
             <p>{this.state.questions}</p>
           </div>
         </div>
-        ​
         <div>
           <div className="col-12 text-center">
-            <ul>
-              <li>{this.state.options[0]}</li>
-              <li>{this.state.options[1]}</li>
-              <li>{this.state.options[2]}</li>
-              <li>{this.state.options[3]}</li>
-            </ul>
+              <Radio checked={this.props.checked} value={this.state.options[0]} onChange={this.props.onChange}>{this.state.options[0]}</Radio>
+              <Radio checked={this.props.checked} value={this.state.options[1]} onChange={this.props.onChange}>{this.state.options[1]}</Radio>
+              <Radio checked={this.props.checked} value={this.state.options[2]} onChange={this.props.onChange}>{this.state.options[2]}</Radio>
+              <Radio checked={this.props.checked} value={this.state.options[3]} onChange={this.props.onChange}>{this.state.options[3]}</Radio>
           </div>
         </div>
-        {/* <form>
-          <div className="form-check">
-            <label>
-              <input
-                type="radio"
-                name="react-options"
-                value="option1"
-                className="option-check-input"
-              />
-              {this.state.option[0]}
-            </label>
-          </div>
-        </form> */}
+        
         ​
         <div>
           <div className="col-12 text-center">
