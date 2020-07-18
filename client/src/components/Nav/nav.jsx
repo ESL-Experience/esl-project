@@ -33,7 +33,7 @@ export default class nav extends Component {
               <Link to="/elmactivity" className="nav-item nav-link text-white">
                 Activities
               </Link>
-              <Link to="/auth/logout"className="nav-item nav-link text-white" >
+              <Link to="/login"className="nav-item nav-link text-white" >
                 Log Out
               </Link>
               {/* <a
