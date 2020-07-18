@@ -1,4 +1,4 @@
-[
+export const intPres = [
     {
         "id": 1,
         "question": "Charles never _________ breakfast in the morning.",
