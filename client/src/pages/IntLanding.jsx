@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import Button from "../components/Button/Button";
 import { connect } from "react-redux";
 import { setCurrentUser } from "../actions/auth-actions";
+import "../components/IntLanding/intlanding.css"
 
-class Levels extends Component {
+class IntLanding extends Component {
   state = {
     user: {},
   };
@@ -19,17 +20,23 @@ class Levels extends Component {
         <div className="container-fluid">
           <div className="row intro">
             <div className="col-12 text-center">
-              <p>Hello {user.displayName}!</p>
+              <p>{user.displayName}, how will you study today?</p>
             </div>
           </div>
           <div className="row subtitle">
             <div className="col-12 text-center">
-              <p>Choose your level of study.</p>
+              <p>Intermediate Level</p>
             </div>
           </div>
           <div>
             <div className="col-12 text-center">
-              <a href={"/ElmLanding"}>
+              <div id="pracContain">
+                Practice
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="col-12 text-center">
               <Button
                 onClick={() => {
                   console.log("I was clicked");
@@ -37,24 +44,21 @@ class Levels extends Component {
                 type="button"
                 buttonStyle="btn--yellow--outline"
                 buttonSize="btn--medium">
-                Elementary
+                Grammar
               </Button>
-              </a>
             </div>
           </div>
           <div>
             <div className="col-12 text-center">
-              <a href={"/IntLanding"}>
               <Button
                 onClick={() => {
                   console.log("I was clicked");
                 }}
                 type="button"
-                buttonStyle="btn--orange--outline"
+                buttonStyle="btn--yellow--outline"
                 buttonSize="btn--medium">
-                Intermediate
+                Vocabulary
               </Button>
-              </a>
             </div>
           </div>
         </div>
@@ -68,4 +72,4 @@ class Levels extends Component {
 const mapStateToProps = (state) => ({
   auth: state.auth,
 });
-export default connect(mapStateToProps, { setCurrentUser })(Levels);
+export default connect(mapStateToProps, { setCurrentUser })(IntLanding);

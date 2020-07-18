@@ -11,7 +11,8 @@ import Levels from "../src/pages/Levels";
 import store from "./store";
 import { Provider } from "react-redux";
 import Activity from "../src/pages/Activity";
-import ElmLanding from "../src/pages/ElmLanding"
+import ElmLanding from "../src/pages/ElmLanding";
+import IntLanding from "../src/pages/IntLanding"
 
 const Main = withRouter(({ location }) => {
   return (
@@ -25,6 +26,7 @@ const Main = withRouter(({ location }) => {
           <Route exact path="/login" component={login} />
           <Route exact path="/dashboard" component={Levels} />
           <Route exact path="/ElmLanding" component={ElmLanding} />
+          <Route exact path="/IntLanding" component={IntLanding} />
           <Route exact path="/Activity" component={Activity} />
           <Route component={NoMatch} />
         </Switch>
