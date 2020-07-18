@@ -6,8 +6,8 @@ router.route("/logout").get((req, res) => {
   // handle with passport
   let redirectPath =
     process.env.NODE_ENV === "production"
-      ? "https://esl-final-project.herokuapp.com/"
-      : "http://localhost:3000/";
+      ? "https://esl-final-project.herokuapp.com/login"
+      : "http://localhost:3000/login";
   req.logout();
   res.redirect(redirectPath);
 });
