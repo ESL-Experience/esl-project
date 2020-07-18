@@ -1,72 +1,73 @@
-[{
+export const intPrepPlace =[
+     {
         "id": 1,
-        "question": "There is a coffee table _________ the couch.",
+        "question": "There are a lot of people swimming _________ the river today.",
         "options": [
             "next to",
             "under",
             "in",
             "on"
         ],
-        "answer": "next to"
+        "answer": "in"
     },
     {
         "id": 2,
-        "question": "Our Latin teacher always stands _________ the teacher's desk",
+        "question": "Do you see that dirty mark _________ the ceiling?",
         "options": [
             "under",
             "in",
             "in front of",
             "on"
         ],
-        "answer": "in front of"
-    },
-    {
-        "id": 3,
-        "question": "Mr. Hemmingway has a beautiful garden _________ his house.",
-        "options": [
-            "under",
-            "in",
-            "on",
-            "behind"
-        ],
-        "answer": "behind"
-    },
-    {
-        "id": 4,
-        "question": "Mr. Pinsley, our elf, is _________ the kitchen table.",
-        "options": [
-            "under",
-            "at",
-            "behind",
-            "in front of"
-        ],
-        "answer": "under"
-    },
-    {
-        "id": 5,
-        "question": "Jenni like to play cricket _________ the baseball field.",
-        "options": [
-            "in front of",
-            "in",
-            "on",
-            "under"
-        ],
         "answer": "on"
     },
     {
-        "id": 6,
-        "question": "Sabrina is looking for her doll _________ the attic.",
+        "id": 3,
+        "question": "Who is that man standing _________ the bus stop?.",
         "options": [
-            "in",
-            "on",
             "under",
-            "in front of"
+            "at",
+            "on",
+            "behind"
+        ],
+        "answer": "at"
+    },
+    {
+        "id": 4,
+        "question": "I'll met you _________ the hotel lobby at 7pm.",
+        "options": [
+            "under",
+            "on",
+            "in",
+            "through"
         ],
         "answer": "in"
     },
     {
+        "id": 5,
+        "question": "There's someone knocking _________ the front door.",
+        "options": [
+            "in front of",
+            "in",
+            "at",
+            "under"
+        ],
+        "answer": "at"
+    },
+    {
+        "id": 6,
+        "question": "The angry landlord pinned an eviction notice _________ the door.",
+        "options": [
+            "in",
+            "on",
+            "under",
+            "in front of"
+        ],
+        "answer": "on"
+    },
+    {
         "id": 7,
-        "question": "Reggie likes to play with his brother _________ the basketball court.",
+        "question": "There are suspicious meetings going on _________ closed doors these days.",
         "options": [
             "in",
             "under",
@@ -77,7 +78,7 @@
     },
     {
         "id": 8,
-        "question": "The red dragon sat _________ his treasure.",
+        "question": "I hope I can retire _________ an island one day.",
         "options": [
             "on",
             "in",
@@ -88,14 +89,14 @@
     },
     {
         "id": 9,
-        "question": "Don't stand _________ the television. I can't see!",
+        "question": "The pimple _________ my nose hurts so much!",
         "options": [
             "next to",
             "in front of",
             "above",
-            "under"
+            "on"
         ],
-        "answer": "in front of"
+        "answer": "on"
     },
     {
         "id": 10,

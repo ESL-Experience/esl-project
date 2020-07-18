@@ -4,10 +4,7 @@ import { connect } from "react-redux";
 import { setCurrentUser } from "../actions/auth-actions";
 
 class Levels extends Component {
-  state = {
-    user: {},
-  };
-
+  
   async componentDidMount() {
     await this.props.setCurrentUser();
   }
