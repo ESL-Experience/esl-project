@@ -15,6 +15,12 @@ import ElmLanding from "../src/pages/ElmLanding";
 import IntLanding from "../src/pages/IntLanding";
 import intPres from "../src/pages/intPresQuiz";
 import ElmGramLand from "../src/pages/ElmGramLand";
+import ElmPresQuiz from "../src/pages/ElmPresQuiz";
+import ElmPastQuiz from "../src/pages/ElmPastQuiz";
+import ElmFutrQuiz from "../src/pages/ElmFutrQuiz";
+import ElmTimeQuiz from "../src/pages/ElmTimeQuiz";
+import ElmPlaceQuiz from "../src/pages/ElmPlaceQuiz";
+import ElmMvmtQuiz from "../src/pages/ElmMvmtQuiz";
 
 const Main = withRouter(({ location }) => {
   return (
@@ -32,6 +38,12 @@ const Main = withRouter(({ location }) => {
           <Route exact path="/Activity" component={Activity} />
           <Route exact path="/intPresQuiz" component={intPres} />
           <Route exact path="/ElmGramLand" component={ElmGramLand} />
+          <Route exact path="/ElmPresQuiz" component={ElmPresQuiz} />
+          <Route exact path="/ElmPastQuiz" component={ElmPastQuiz} />
+          <Route exact path="/ElmFutrQuiz" component={ElmFutrQuiz} />
+          <Route exact path="/ElmTimeQuiz" component={ElmTimeQuiz} />
+          <Route exact path="/ElmPlaceQuiz" component={ElmPlaceQuiz} />
+          <Route exact path="/ElmMvmtQuiz" component={ElmMvmtQuiz} />
           <Route component={NoMatch} />
         </Switch>
       </div>
