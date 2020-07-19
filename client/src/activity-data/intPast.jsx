@@ -1,4 +1,4 @@
-{
+export const quiz = {
     "quizTitle": "Intermediate Past Tenses",
     "quizSynopsis": "An exercise to check your knowledge of past simple and present continuous.",
     "questions": [
