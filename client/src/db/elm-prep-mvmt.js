@@ -11,7 +11,7 @@ export const elmPrepMvmt = [{
     },
     {
         "id": 2,
-        "question": "David is about to fall _________ a rock",
+        "question": "David is about to fall _________ a rock.",
         "options": [
             "to",
             "off",
