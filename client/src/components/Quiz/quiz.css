@@ -29,7 +29,10 @@
     top: 450px; /* Adjust this value to move the positioned div up and down */
     padding: 2px;
   }
-  
+  .react-quiz-container h3 {
+    font-family: "Avenir Regular", sans-serif;
+    font-weight: lighter;
+  }
   .react-quiz-container .startQuizWrapper {
     margin-top: 10px;
   }
@@ -128,15 +131,16 @@
     border-bottom-right-radius: 5px;
   } */
   
-  /* .react-quiz-container .result-answer-wrapper h3 {
-      background-color: #fafafa;;
+  .react-quiz-container .result-answer-wrapper h3 {
+    font-size: medium;
+      /* background-color: #fafafa;;
       opacity: 0.8;
       color: rgba(0,0,0,0.9);
       margin: 0px;
       padding: 10px;
       border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-  } */
+      border-top-right-radius: 5px; */
+  }
   
   /* .react-quiz-container .result-answer-wrapper .explaination {
     padding: 20px;
@@ -182,22 +186,51 @@
     margin-bottom: 20px;
   } */
   
-  /* .react-quiz-container .selection-tag,
+  .react-quiz-container .selection-tag,
   .react-quiz-container .number-of-selection{
     padding: 7px;
-    border-radius: 5px;
+    border-radius: 25px;
     color: #ffffff;
-  } */
-  
-  .react-quiz-container .number-of-selection {
-    background: #EB7C2A;
-    margin-left: 5px;
+    font-style: italic;
   }
   
-  /* .react-quiz-container .selection-tag.single {
-    background: #3F51B5;
-  } */
+  .react-quiz-container .number-of-selection {
+    background:  #ffffff;
+    color: #051f45;
+    border: #f86d20 solid 2px;
+    margin-left: 5px;
+    font-style: italic;
+  }
+  
+  .react-quiz-container .selection-tag.single {
+    background: #ffffff;
+    color: #051f45;
+    border: #f86d20 solid 2px;
+
+  }
   
   /* .react-quiz-container .selection-tag.multiple {
     background: #FF9800;
+  } */
+
+  .nextQuestionBtn {
+    background-color: #EB7C2A;
+    border: #041633;
+    border-radius: 25px;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    display: flex;
+
+    /* position: fixed;
+    display: flex; */
+  }
+
+  .questionWrapperBody p {
+    font-family: "Avenir Regular", sans-serif;
+    font-weight: lighter;
+  }
+
+  /* .selection-tag {
+    color: !important #051f45;
   } */
