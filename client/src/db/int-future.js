@@ -93,7 +93,7 @@ export const intFutr =[
         "question": {
             "caption": "Look at those clouds. It ____________!",
             "options": [
-                "will to rain",
+                "will rains",
                 "will rain",
                 "is going to rain",
                 "going to rain"
@@ -119,7 +119,7 @@ export const intFutr =[
         "question": {
             "caption": "'Anna's in hospital.''I _________ her later.'",
             "options": [
-                "going to visit ",
+                "going to visit",
                 "am going to visit",
                 "will visit",
                 "will to visit"

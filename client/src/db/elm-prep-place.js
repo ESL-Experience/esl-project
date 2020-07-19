@@ -11,7 +11,7 @@ export const elmPrepPlace =[{
     },
     {
         "id": 2,
-        "question": "Our Latin teacher always stands _________ the teacher's desk",
+        "question": "Our Latin teacher always stands _________ the teacher's desk.",
         "options": [
             "under",
             "in",
