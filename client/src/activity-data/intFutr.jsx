@@ -1,4 +1,4 @@
-{
+export const quiz = {
     "quizTitle": "Intermediate Future Tenses",
     "quizSynopsis": "An exercise to check your knowledge of future will and future going to.",
     "questions": [

@@ -1,4 +1,4 @@
-{
+export const quiz = {
     "quizTitle": "Elementary Prepositions of Time",
     "quizSynopsis": "An exercise to check your knowledge of prepositions of time.",
     "questions": [

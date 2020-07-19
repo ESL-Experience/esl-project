@@ -1,4 +1,4 @@
-{
+export const quiz = {
     "quizTitle": "Intermediate Prepositions of Place",
     "quizSynopsis": "An exercise to check your knowledge of prepositions of place.",
     "questions": [
