@@ -12,8 +12,9 @@ import store from "./store";
 import { Provider } from "react-redux";
 import Activity from "../src/pages/Activity";
 import ElmLanding from "../src/pages/ElmLanding";
-import IntLanding from "../src/pages/IntLanding"
-import intPres from "../src/pages/intPresQuiz"
+import IntLanding from "../src/pages/IntLanding";
+import intPres from "../src/pages/intPresQuiz";
+import ElmGramLand from "../src/pages/ElmGramLand";
 
 const Main = withRouter(({ location }) => {
   return (
@@ -30,6 +31,7 @@ const Main = withRouter(({ location }) => {
           <Route exact path="/IntLanding" component={IntLanding} />
           <Route exact path="/Activity" component={Activity} />
           <Route exact path="/intPresQuiz" component={intPres} />
+          <Route exact path="/ElmGramLand" component={ElmGramLand} />
           <Route component={NoMatch} />
         </Switch>
       </div>

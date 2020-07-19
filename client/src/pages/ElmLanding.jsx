@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Button from "../components/Button/Button";
 import { connect } from "react-redux";
 import { setCurrentUser } from "../actions/auth-actions";
-import "../components/ElmLanding/elmlanding.css"
+import "../components/ElmLanding/elmlanding.css";
 
 class ElmLanding extends Component {
   state = {
@@ -30,9 +30,23 @@ class ElmLanding extends Component {
           </div>
           <div>
             <div className="col-12 text-center">
-              <div id="pracContain">
-                Practice
-              </div>
+              <div id="pracContain">Practice</div>
+            </div>
+          </div>
+          <div>
+            <div className="col-12 text-center">
+              <a href={"/ElmGramLand"}>
+                <Button
+                  onClick={() => {
+                    console.log("I was clicked");
+                  }}
+                  type="button"
+                  buttonStyle="btn--yellow--outline"
+                  buttonSize="btn--medium"
+                >
+                  Grammar
+                </Button>
+              </a>
             </div>
           </div>
           <div>
@@ -43,20 +57,8 @@ class ElmLanding extends Component {
                 }}
                 type="button"
                 buttonStyle="btn--yellow--outline"
-                buttonSize="btn--medium">
-                Grammar
-              </Button>
-            </div>
-          </div>
-          <div>
-            <div className="col-12 text-center">
-              <Button
-                onClick={() => {
-                  console.log("I was clicked");
-                }}
-                type="button"
-                buttonStyle="btn--yellow--outline"
-                buttonSize="btn--medium">
+                buttonSize="btn--medium"
+              >
                 Vocabulary
               </Button>
             </div>
