@@ -21,6 +21,14 @@ import ElmFutrQuiz from "../src/pages/ElmFutrQuiz";
 import ElmTimeQuiz from "../src/pages/ElmTimeQuiz";
 import ElmPlaceQuiz from "../src/pages/ElmPlaceQuiz";
 import ElmMvmtQuiz from "../src/pages/ElmMvmtQuiz";
+import IntTimeQuiz from "../src/pages/IntTimeQuiz";
+import IntPastQuiz from "../src/pages/IntPastQuiz";
+import IntPlaceQuiz from "../src/pages/IntPlaceQuiz";
+import IntFutrQuiz from "../src/pages/IntFutrQuiz";
+import IntMvmtQuiz from "../src/pages/IntMvmtQuiz";
+import IntGramLand from "../src/pages/IntGramLand";
+
+
 
 const Main = withRouter(({ location }) => {
   return (
@@ -44,6 +52,14 @@ const Main = withRouter(({ location }) => {
           <Route exact path="/ElmTimeQuiz" component={ElmTimeQuiz} />
           <Route exact path="/ElmPlaceQuiz" component={ElmPlaceQuiz} />
           <Route exact path="/ElmMvmtQuiz" component={ElmMvmtQuiz} />
+          <Route exact path="/IntMvmtQuiz" component={IntMvmtQuiz} />
+          <Route exact path="/IntMvmtQuiz" component={IntMvmtQuiz} />
+          <Route exact path="/IntTimeQuiz" component={IntTimeQuiz} />
+          <Route exact path="/IntPastQuiz" component={IntPastQuiz} />
+          <Route exact path="/IntPlaceQuiz" component={IntPlaceQuiz} />
+          <Route exact path="/IntFutrQuiz" component={IntFutrQuiz} />
+          <Route exact path="/IntGramLand" component={IntGramLand} />
+
           <Route component={NoMatch} />
         </Switch>
       </div>
