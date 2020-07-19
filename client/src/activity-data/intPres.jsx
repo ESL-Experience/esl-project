@@ -1,4 +1,4 @@
-{
+export const quiz = {
     "quizTitle": "Intermediate Present Tenses",
     "quizSynopsis": "An exercise to check your knowledge of present simple and present continuous.",
     "questions": [

@@ -37,6 +37,7 @@ class IntLanding extends Component {
           </div>
           <div>
             <div className="col-12 text-center">
+              <a href={"/intPresQuiz"}>
               <Button
                 onClick={() => {
                   console.log("I was clicked");
@@ -46,6 +47,7 @@ class IntLanding extends Component {
                 buttonSize="btn--medium">
                 Grammar
               </Button>
+              </a>
             </div>
           </div>
           <div>
