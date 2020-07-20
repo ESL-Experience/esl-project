@@ -38,7 +38,23 @@ passport.use(
       User.findOne({ googleid: profile.id }).then((currentUser) => {
         if (currentUser) {
           // User already exists
+         if (typeof profile.name.givenName !== 'undefined') {
+            currentUser.givenName = profile.name.givenName;
+         }
+         if (typeof profile.name.familyName !== 'undefined') {
+            currentUser.familyName = profile.name.familyName;
+         }
+         if (typeof profile.displayName !== 'undefined') {
+            currentUser.displayName = profile.displayName;
+         }
+         if (typeof profile._json.picture !== 'undefined') {
+            currentUser.thumnail = profile._json.picture;
+         }
+         if (typeof profile.emails[0].value !== 'undefined') {
+            currentUser.email = profile.emails[0].value;
+         }
           console.log("user is: ", currentUser);
+          currentUser.save();
           done(null, currentUser);
         } else {
           // if not, create user in our database
@@ -77,7 +93,23 @@ passport.use(
       User.findOne({ facebookid: profile.id }).then((currentUser) => {
         if (currentUser) {
           // User already exists
+          if (typeof profile.name.givenName !== 'undefined') {
+            currentUser.givenName = profile.name.givenName;
+         }
+         if (typeof profile.name.familyName !== 'undefined') {
+            currentUser.familyName = profile.name.familyName;
+         }
+         if (typeof profile.displayName !== 'undefined') {
+            currentUser.displayName = profile.displayName;
+         }
+         if (typeof profile.photos[0].value !== 'undefined') {
+            currentUser.thumnail = profile.photos[0].value;
+         }
+         if (typeof profile.emails[0].value !== 'undefined') {
+            currentUser.email = profile.emails[0].value;
+         }
           console.log("user is: ", currentUser);
+          currentUser.save();
           done(null, currentUser);
         } else {
           // if not, create user in our database
