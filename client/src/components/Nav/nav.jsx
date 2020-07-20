@@ -38,12 +38,6 @@ class nav extends Component {
               <Link to="/login"className="nav-item nav-link text-white" >
                 Log Out
               </Link>
-              {/* <a
-                className="nav-item nav-link text-white"
-                href="#"
-              >
-                Disabled
-              </a> */}
             </div>
           </div>
         </nav>

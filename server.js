@@ -1,5 +1,4 @@
 const express = require("express");
-const graphqlHTTP = require("express-graphql");
 const authRoutes = require("./routes/auth-routes");
 const passportSetup = require("./config/passport-setup");
 const cookieSession = require("cookie-session");
@@ -8,7 +7,6 @@ const keys = require("./config/keys");
 const app = express();
 const passport = require("passport");
 const profileRoutes = require("./routes/profile-routes");
-const routes = require("./routes");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 

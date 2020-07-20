@@ -8,7 +8,7 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 450px; /* Adjust this value to move the positioned div up and down */
+    top: 450px;
     padding: 2px;
 }
 
@@ -17,11 +17,7 @@
     height: 550px;
     margin-left: auto;
     margin-right: auto;
-    /* overflow: hidden; */
     display: block;
-    /* margin: 0px; */
-    /* width: 40%; */
-    /* object-fit: cover; */
 }
 
 .logo img {
@@ -35,9 +31,9 @@ h1 {
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 390px; /* Adjust this value to move the positioned div up and down */
+    top: 390px;
     text-align: center;
-    width: 60%; /* Set the width of the positioned div */
+    width: 60%;
     font-family: "Century Gothic Regular", sans-serif;
 }
 
