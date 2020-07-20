@@ -15,7 +15,7 @@ class Levels extends Component {
       return (
         <div className="container-fluid">
           <div className="row intro">
-            <div className="col-12 text-center">
+            <div className="dash-intro col-12 text-center">
               <p>Hello {user.displayName}!</p>
             </div>
           </div>

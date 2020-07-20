@@ -11,3 +11,7 @@
     left: 0;
     right: 0;
 }
+
+.sub-head {
+    border-bottom: #eded73 solid 3px;
+   }
