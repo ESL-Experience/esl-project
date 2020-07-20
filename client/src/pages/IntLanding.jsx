@@ -19,12 +19,12 @@ class IntLanding extends Component {
       return (
         <div className="container-fluid">
           <div className="row intro">
-            <div className="col-12 text-center">
+            <div className="landing col-12 text-center">
               <p>{user.displayName}, how will you study today?</p>
             </div>
           </div>
           <div className="row subtitle">
-            <div className="col-12 text-center">
+            <div className="subtitle col-12 text-center">
               <p>Intermediate Level</p>
             </div>
           </div>
