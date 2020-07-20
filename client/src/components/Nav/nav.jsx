@@ -35,7 +35,7 @@ class nav extends Component {
               {/* <Link to="/Activity" className="nav-item nav-link text-white">
                 Activities
               </Link> */}
-              <Link to="/login"className="nav-item nav-link text-white" >
+              <Link to="/"className="nav-item nav-link text-white" >
                 Log Out
               </Link>
             </div>
