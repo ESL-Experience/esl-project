@@ -3,10 +3,12 @@ import logo from "./eng-exp-logo-wht-bg-no-txt.png";
 import "./nav.css";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { setCurrentUser } from "../../actions/auth-actions";
 
 class nav extends Component {
   render() {
     console.log(this.props.auth.user);
+    const { user } = this.props.auth;
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-none">
@@ -26,6 +28,8 @@ class nav extends Component {
           </button>
           <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div className="navbar-nav ml-auto">
+          <img src= { user.thumbnail} height="40" width="40" className="user-img"/>
+          <span className="user text-white">{user.displayName}</span>
               {/* <Link to="/home" className="nav-item nav-link active text-white align-right">
                 Home <span className="sr-only">(current)</span>
               </Link> */}
@@ -49,4 +53,4 @@ class nav extends Component {
 const mapStateToProps = (state) => ({
   auth: state.auth,
 });
-export default connect(mapStateToProps)(nav);
+export default connect(mapStateToProps, { setCurrentUser })(nav);

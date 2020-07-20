@@ -21,7 +21,7 @@ class IntGramLand extends Component {
         <div className="container-fluid">
           <div className="row intro">
             <div className="landing col-12 text-center">
-              <p>{user.displayName}, choose your topic today.</p>
+              <p>{user.givenName}, choose your topic today.</p>
             </div>
           </div>
           <div className="row subtitle">
