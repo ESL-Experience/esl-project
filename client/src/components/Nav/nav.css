@@ -1,31 +1,40 @@
 button {
-    color: white;
+  color: white;
 }
 
 #navbarNavAltMarkup {
-    margin-top: -20
-    px;
-    float: right !important;
-    font-family: "Avenir", sans-serif;
-    font-weight: lighter;
+  margin-top: -20 px;
+  float: right !important;
+  font-family: "Avenir", sans-serif;
+  font-weight: lighter;
 }
 
 .title {
-    margin-top: -25px;
-    margin-left: -25px;
-    font-family: "Avenir", sans-serif;
-    font-size: 50px;
-    font-weight: lighter;
-
+  margin-top: -25px;
+  margin-left: -25px;
+  font-family: "Avenir", sans-serif;
+  font-size: 50px;
+  font-weight: lighter;
 }
 
 nav {
-    border-bottom: 2px solid #E8E887;
-    height: 150px;
-    padding: 50px;
-    margin: 50px
+  border-bottom: 2px solid #e8e887;
+  height: 150px;
+  padding: 50px;
+  margin: 50px;
 }
 
 .navbar-toggler-icon {
-    color: white !important;
+  color: white !important;
+}
+
+.user {
+  /* text-align: right; */
+  font-family: "Avenir", sans-serif;
+  font-weight: lighter;
+  margin-top: -20 px;
+}
+
+.user-img {
+    margin-right: 10px;
 }

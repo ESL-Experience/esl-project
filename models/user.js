@@ -7,6 +7,14 @@ const UserSchema = new Schema({
         type: String,
         trim: true,
         required: true
+    },    
+    givenName: {
+        type: String,
+        trim: true,
+    },    
+    familyName: {
+        type: String,
+        trim: true,
     },
     googleid: {
         type: String

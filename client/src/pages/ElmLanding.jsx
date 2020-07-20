@@ -20,7 +20,7 @@ class ElmLanding extends Component {
         <div className="container-fluid">
           <div className="row intro">
             <div className="landing col-12 text-center">
-              <p>{user.displayName}, how will you study today?</p>
+              <p>{user.givenName}, how will you study today?</p>
             </div>
           </div>
           <div className="row subtitle">
