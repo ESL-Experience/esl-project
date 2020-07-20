@@ -4,7 +4,7 @@ import Books from "./pages/Books";
 import Detail from "./pages/Detail";
 import Nav from "./components/Nav/nav";
 import "./App.css";
-import home from "./components/Home/home";
+// import home from "./components/Home/home";
 import login from "./components/Login/login";
 import NoMatch from "../src/pages/NoMatch";
 import Levels from "../src/pages/Levels";
@@ -35,11 +35,11 @@ const Main = withRouter(({ location }) => {
     // <Router>
       <div>
         {
-          location.pathname != '/login' && <Nav />
+          location.pathname != '/' && <Nav />
         }
         <Switch>
-          <Route exact path="/home" component={home} />
-          <Route exact path="/login" component={login} />
+          {/* <Route exact path="/home" component={home} /> */}
+          <Route exact path="/" component={login} />
           <Route exact path="/dashboard" component={Levels} />
           <Route exact path="/ElmLanding" component={ElmLanding} />
           <Route exact path="/IntLanding" component={IntLanding} />
