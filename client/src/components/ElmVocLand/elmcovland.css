@@ -1,0 +1,11 @@
+#pracContain {
+    background-color: white;
+    border: 2px solid orange;
+    font-family: "Century Gothic Regular", sans-serif;
+    font-size: 35px;
+    width: 300px;
+    height: auto;
+    margin: 5px auto;
+    left: 0;
+    right: 0;
+}
