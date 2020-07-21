@@ -16,7 +16,7 @@ class nav extends Component {
             <img src= { logo } height="250" width="250"/>
           </a> <span className="title text-white">English Experience </span>
           <button
-            className="navbar-toggler text-white"
+            className="navbar-toggler navbar-dark"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNavAltMarkup"
