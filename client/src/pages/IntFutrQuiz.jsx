@@ -38,7 +38,7 @@ class generateQuiz extends Component {
 
 
       return (
-<div className="row">
+        <div className="row">
           <div className="col-6 text-center mr-auto">
             <Button
               onClick={() => this.handleQuizSave(quizData)}
