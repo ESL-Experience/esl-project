@@ -38,3 +38,7 @@ nav {
 .user-img {
     margin-right: 10px;
 }
+
+.navbar-toggler-icon {
+  color: white;
+}
