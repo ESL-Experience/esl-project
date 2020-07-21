@@ -102,7 +102,7 @@ class ElmVocLand extends Component {
           </div>
           <div className="row two">
             <div className="col-6 text-center">
-              <a href={"/ElmFutrQuiz"}>
+              <a href={"/ElmSchoolQuiz"}>
                 {" "}
                 <Button
                   onClick={() => {

@@ -27,6 +27,7 @@ import IntMvmtQuiz from "../src/pages/IntMvmtQuiz";
 import IntGramLand from "../src/pages/IntGramLand";
 import ElmVocLand from "../src/pages/ElmVocLand";
 import ElmHomeQuiz from "../src/pages/ElmHomeQuiz";
+import ElmSchoolQuiz from "../src/pages/ElmSchoolVoc";
 
 
 
@@ -54,6 +55,7 @@ const Main = withRouter(({ location }) => {
           <Route exact path="/ElmPlaceQuiz" component={ElmPlaceQuiz} />
           <Route exact path="/ElmMvmtQuiz" component={ElmMvmtQuiz} />
           <Route exact path="/ElmHomeQuiz" component={ElmHomeQuiz} />
+          <Route exact path="/ElmSchoolQuiz" component={ElmSchoolQuiz} />
           <Route exact path="/ElmVocLand" component={ElmVocLand} />
           <Route exact path="/IntMvmtQuiz" component={IntMvmtQuiz} />
           <Route exact path="/IntMvmtQuiz" component={IntMvmtQuiz} />
