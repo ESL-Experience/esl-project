@@ -1,0 +1,5 @@
+@media only screen and (max-width: 858px) {
+    .container-fluid {
+        margin-top: 300px;
+    }
+}

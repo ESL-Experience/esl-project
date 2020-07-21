@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Button from "../components/Button/Button";
 import { connect } from "react-redux";
 import { setCurrentUser } from "../actions/auth-actions";
+import "../components/Levels/levels.css";
+
 
 class Levels extends Component {
   
