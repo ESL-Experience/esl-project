@@ -38,5 +38,5 @@ MERN Stack
 Thanks to:
 * Ihab Alazzawi (our fearless and ever-knowledgable instructor)
 * Cody Foster (our project advisor)
-* Manoli Koutouzosm
+* Manoli Koutouzosm (our tough-love TA)
 
