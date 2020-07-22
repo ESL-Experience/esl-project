@@ -22,6 +22,12 @@ nav {
   height: 150px;
   padding: 50px;
   margin: 50px;
+  
+}
+
+.navbar-nav, .user-img, .user, .nav-item{
+ display: flex;
+  align-items: center;
 }
 
 .navbar-toggler-icon {
@@ -33,8 +39,10 @@ nav {
   font-family: "Avenir", sans-serif;
   font-weight: lighter;
   margin-top: -20 px;
+  margin-right: 15px;
 }
 
 .user-img {
-    margin-right: 10px;
+    margin-right: 15px;
 }
+
