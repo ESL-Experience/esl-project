@@ -32,10 +32,11 @@ MERN Stack
     * Axios
 
 ## Gif of App in use
-
+<img src="https://github.com/ESL-Experience/esl-project/blob/master/client/src/images/engExp.gif"/>
 
 ## Acknowledgements
 Thanks to:
 * Ihab Alazzawi (our fearless and ever-knowledgable instructor)
 * Cody Foster (our project advisor)
-* Manoli Koutouzos
+* Manoli Koutouzosm
+
