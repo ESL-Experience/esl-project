@@ -13,7 +13,7 @@ class nav extends Component {
       <div>
         <nav className='navbar navbar-expand-lg navbar-light bg-none'>
           <a className='navbar-brand text-white' href='#'>
-            <img src={logo} height='250' width='250' />
+            <img classname="logo responsive" src={logo} height='250' width='250' />
           </a>{' '}
           <span className='title text-white'>English Experience </span>
           <button
@@ -33,7 +33,7 @@ class nav extends Component {
                 src={user.thumbnail}
                 height='40'
                 width='40'
-                className='user-img rounded-circle'
+                className='user-img rounded-circle responsive'
               />
               <span className='user text-white'>{user.displayName}</span>
               {/* <Link to="/home" className="nav-item nav-link active text-white align-right">
