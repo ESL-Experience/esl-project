@@ -2,7 +2,7 @@
 
 ## Dev Team
 * Amy Haerr
-* Kortnie Heidle
+* Kortnie Heidel
 * John Pendergrass
 * Christian Shaw
 
