@@ -45,10 +45,10 @@ mongoose
   };
 
   // Connect to MongoDB
-mongoose
-.connect("mongodb+srv://userDB:741705My$@cluster0.rnfvi.mongodb.net/userdb?retryWrites=true&w=majority")
-.then(() => console.log('MongoDB Connected'))
-.catch(err => console.log(err));
+// mongoose
+// .connect("mongodb+srv://userDB:741705My$@cluster0.rnfvi.mongodb.net/userdb?retryWrites=true&w=majority")
+// .then(() => console.log('MongoDB Connected'))
+// .catch(err => console.log(err));
 
 
 // set up routes
