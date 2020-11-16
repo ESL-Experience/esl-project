@@ -30,6 +30,27 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", {
   useNewUrlParser: true,
 });
 
+// DB Config
+const db = require('./config/keys').mongoURI;
+
+// Connect to MongoDB
+mongoose
+  .connect(db)
+  .then(() => console.log('MongoDB Connected'))
+  .catch(err => console.log(err));
+
+  module.exports = {
+    mongoURI: process.env.MONGO_URI,
+    secretOrKey: process.env.SECRET_OR_KEY
+  };
+
+  // Connect to MongoDB
+mongoose
+.connect("mongodb+srv://userDB:741705My$@cluster0.rnfvi.mongodb.net/userdb?retryWrites=true&w=majority")
+.then(() => console.log('MongoDB Connected'))
+.catch(err => console.log(err));
+
+
 // set up routes
 app.use("/auth", authRoutes);
 app.use("/profile", profileRoutes);
