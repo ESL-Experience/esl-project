@@ -30,26 +30,13 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", {
   useNewUrlParser: true,
 });
 
-// DB Config
-const db = require('./config/keys').mongoURI;
-
-// Connect to MongoDB
-// mongoose
-//   .connect(db)
-//   .then(() => console.log('MongoDB Connected'))
-//   .catch(err => console.log(err));
-
-//   module.exports = {
-//     mongoURI: process.env.MONGO_URI,
-//     secretOrKey: process.env.SECRET_OR_KEY
-//   };
-
-  // Connect to MongoDB
+// Connect to MongoDB Atlass
 mongoose
-.connect("mongodb+srv://userDB:741705My$@cluster0.rnfvi.mongodb.net/userdb?retryWrites=true&w=majority")
-.then(() => console.log('MongoDB Connected'))
-.catch(err => console.log(err));
-
+  .connect(
+    "mongodb+srv://userDB:741705My$@cluster0.rnfvi.mongodb.net/userdb?retryWrites=true&w=majority"
+  )
+  .then(() => console.log("MongoDB Connected"))
+  .catch((err) => console.log(err));
 
 // set up routes
 app.use("/auth", authRoutes);
@@ -57,11 +44,11 @@ app.use("/profile", profileRoutes);
 // app.use(routes);
 
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
-    app.get("*", (req, res) => {
-      res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-    });
-  }
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 app.listen(PORT, () => {
   console.log(`app now listening for requests on ${PORT}`);
