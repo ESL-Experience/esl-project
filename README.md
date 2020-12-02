@@ -31,8 +31,8 @@ MERN Stack
     * Express.js
     * Axios
 
-## Gif of App in use
-<img src="https://github.com/ESL-Experience/esl-project/blob/master/client/src/images/engExp.gif"/>
+## Video of App in use
+[![eng-exp](http://img.youtube.com/vi/MtTMnDhAcd4/0.jpg)](http://www.youtube.com/watch?v=MtTMnDhAcd4 "English Experience")
 
 ## Acknowledgements
 Thanks to:
