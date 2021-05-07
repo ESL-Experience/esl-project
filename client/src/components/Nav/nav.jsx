@@ -49,7 +49,7 @@ class nav extends Component {
                 Log Out
               </Link>
             </div>
-          </div>
+          </div>d
         </nav>
       </div>
     )
