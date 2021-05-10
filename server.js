@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", {
   useNewUrlParser: true,
 });
 
-// Connect to MongoDB Atlass
+// Connect to MongoDB Atlas
 mongoose
   .connect(
     "mongodb+srv://userDB:741705My$@cluster0.rnfvi.mongodb.net/userdb?retryWrites=true&w=majority"
