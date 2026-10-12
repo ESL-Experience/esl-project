@@ -14,7 +14,9 @@ In the future, there will be a dashboard that shows the user the date they compl
 
 ## Links
 * Github repo: https://github.com/ESL-Experience/esl-project
-* Heroku link: https://esl-final-project.herokuapp.com
+
+## Run it locally
+Run `npm install`, then `npm start`. You need your own MongoDB connection string and Google and Facebook OAuth credentials.
 
 ## Stack used
 MERN Stack
